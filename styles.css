@@ -1,2 +1,41 @@
+/* General page styling */
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #f8f9fa; /* Light background like Bootstrap’s theme */
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
 
-/* Your CSS Code here. */
+/* Style the main button */
+#open-modal {
+  padding: 10px 24px;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Hover animation for button */
+#open-modal:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+/* Optional: Slightly enhance modal appearance */
+.modal-content {
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+/* Center modal title text */
+.modal-title {
+  font-weight: 600;
+  color: #212529;
+}
+
+/* Style for modal footer button */
+.modal-footer .btn-secondary {
+  border-radius: 6px;
+}
